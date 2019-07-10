@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Favourite Musical Artists</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="page-header">
+            <h2>Favourite Musical Artists</h2>
+            <small>All yours...</small>
+        </div>
+        <div id="input" class="panel panel-default">
+            <div class="panel-heading">What's your name?</div>
+            First name basis: <input v-model="name">
+            <div class="panel-body">
+                Hi {{ name }}.
+            </div>
+            <div class="panel-heading">Name three favourite musical artists.</div>
+            1. <input v-model="artist1"><br>
+            2. <input v-model="artist2"><br>
+            3. <input v-model="artist3">
+            <div class="panel-body">
+                <p>Your favourite artists are:</p>
+                ✨ {{ artist1 }}<br>
+                💅 {{ artist2 }}<br>
+                🎶 {{ artist3 }}
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="project-1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

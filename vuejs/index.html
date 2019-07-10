@@ -6,5 +6,26 @@
     <div id="app">
         {{ message }}
     </div>
+    <div id="app-2">
+        <span v-bind:title="message">
+            Hover your mouse over me for a few seconds to see my title!
+        </span><br>
+        <span v-if="seen">Now you see me</span>
+    </div>
+    <div id="for-directive">
+        <ol>
+            <li v-for="item in list">
+                {{ item.name }}
+            </li>
+        </ol>
+    </div>
+    <div id="button">
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Reverse Me!</button>
+    </div>
+    <div id="inputs">
+        <h4>{{ message }}</h4>
+        <input v-model="message">
+    </div>
 </body>
 <script src="main.js"></script>
